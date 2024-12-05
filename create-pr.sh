@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Configuration variables
-JIRA_BASE_URL="https://pepsico-ecomm.atlassian.net/browse"
-DEFAULT_REVIEWERS="lsch21"  # Set your default reviewers here
+# you can default to something different if you dont want to set in env variables
+JIRA_BASE_URL="${JIRA_URL:-https://my-company.atlassian.net/browse}"
+DEFAULT_REVIEWERS="${REVIEWERS:-reviewerA}"
 
 # Logging function
 log() {
