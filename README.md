@@ -27,6 +27,12 @@ sudo ln -s ~/code/create-pr/create-pr.sh /usr/local/bin/create-pr
 ```
 
 ## Configuration
+Set those env variables:
+
+```
+export JIRA_URL="your-url"
+export REVIEWERS="user1,user2"
+```
 
 Edit these variables in the script:
 ```
