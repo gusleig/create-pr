@@ -21,16 +21,15 @@ A Bash script that automates creating GitHub pull requests with Jira ticket inte
 ## Installation
 
 ```bash
-mkdir -p ~/bin
-cp create-pr.sh ~/bin/create-pr
-chmod +x ~/bin/create-pr
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc  # or ~/.bash_profile for bash
-source ~/.zshrc
+git clone https://github.com/gusleig/create-pr.git ~/code/create-pr
+chmod +x ~/code/create-pr/create-pr.sh
+sudo ln -s ~/code/create-pr/create-pr.sh /usr/local/bin/create-pr
 ```
 
 ## Configuration
 
 Edit these variables in the script:
+```
 
 ```bash
 JIRA_BASE_URL="https://your-jira-instance.atlassian.net/browse"
